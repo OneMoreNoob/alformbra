@@ -1,11 +1,11 @@
-// matlab -nodesktop -nosplash -nosoftwareopengl < sprinkler.mat
+% matlab -nodesktop -nosplash -nosoftwareopengl < sprinkler.mat
 
-// false = 1; true = 2
+% false = 1; true = 2
 
-/*
-En  el  ejemplo “Sprinkler”,  repetir  los  procesos  de  aprendizaje  a  partir  de  datos completos y de datos incompletos explicados en la Sec.2.3, usando un numero mucho mayor de muestras de aprendizaje (por ejemplo,
-nMuestras = 1000), ası como permitiendo un mayor número de iteraciones. Comentar los resultados obtenidos.
-*/
+
+% En  el  ejemplo “Sprinkler”,  repetir  los  procesos  de  aprendizaje  a  partir  de  datos completos y de datos incompletos explicados en la Sec.2.3, usando un numero mucho mayor de muestras de aprendizaje (por ejemplo,
+% nMuestras = 1000), ası como permitiendo un mayor número de iteraciones. Comentar los resultados obtenidos.
+
 addpath('~/asigDSIC/ETSINF/apr/p2/BNT')
 addpath(genpathKPM('~/asigDSIC/ETSINF/apr/p2/BNT'))
 
@@ -25,7 +25,7 @@ redB.CPD{C} = tabular_CPD(redB, C, [0.5 0.5]);
 redB.CPD{S} = tabular_CPD(redB, S, [0.5 0.9 0.5 0.1]);
 redB.CPD{R} = tabular_CPD(redB, R, [0.8 0.2 0.2 0.8]);
 
-// 2.3
+% 2.3
 semilla = 0; rng(semilla);
 nMuestras = 1000;
 muestras = cell(N, nMuestras);
@@ -36,3 +36,32 @@ redAPR.CPD{C} = tabular_CPD(redAPR, C);
 redAPR.CPD{R} = tabular_CPD(redAPR, R);
 redAPR.CPD{S} = tabular_CPD(redAPR, S);
 redAPR.CPD{W} = tabular_CPD(redAPR, W);
+
+redAPR2=learn_params(redAPR, muestras);
+
+TPCaux = cell(1,N);
+for i=1:N s=struct(redAPR2.CPD{i}); TPCaux{i}=s.CPT; end
+
+muestrasS = muestras;
+semilla = 0; rng(semilla);
+ocultas   = rand(N, nMuestras) > 0.5;
+[I,J]     = find(ocultas);
+for k=1:length(I) muestrasS{I(k), J(k)} = []; end
+
+redEM = mk_bnet(grafo, tallaNodos, 'discrete', nodosDiscretos);
+redEM.CPD{C} = tabular_CPD(redEM, C);
+redEM.CPD{R} = tabular_CPD(redEM, R);
+redEM.CPD{S} = tabular_CPD(redEM, S);
+redEM.CPD{W} = tabular_CPD(redEM, W);
+motorEM      = jtree_inf_engine(redEM);
+
+maxIter = 100; eps = 1e-4;
+semilla = 0; rng(semilla);
+[redEM2] = learn_params_em(motorEM, muestrasS, maxIter, eps);
+auxTPC = cell(1,N);
+for i=1:N s=struct(redEM2.CPD{i}); auxTPC{i}=s.CPT; end
+
+dispcpt(auxTPC{S});
+dispcpt(auxTPC{W});
+dispcpt(auxTPC{R});
+dispcpt(auxTPC{C});
