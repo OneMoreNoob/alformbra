@@ -1,0 +1,6 @@
+Contenido memoria:
+	- Sección 2.4. apartados A y B
+	- Sección 3.2.1, ítem 1
+
+Cifras significativas. Ejemplo:
+si tengo 1000 muestras no tiene sentido decir que hay un 94.52% de acierto porque eso significaría que hemos clasificado correctamente 945.2 muestras.
