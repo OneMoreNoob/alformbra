@@ -24,7 +24,17 @@ redB.CPD{W} = tabular_CPD(redB, W, [1.0 0.1 0.1 0.01 0.0 0.9 0.9 0.99]);
 redB.CPD{C} = tabular_CPD(redB, C, [0.5 0.5]);
 redB.CPD{S} = tabular_CPD(redB, S, [0.5 0.9 0.5 0.1]);
 redB.CPD{R} = tabular_CPD(redB, R, [0.8 0.2 0.2 0.8]);
+motor = jtree_inf_engine(redB);
+evidencia = cell(1,N);
+evidencia{C} = 1;
 
+[explMasProb, logVer] = calc_mpe(motor, evidencia);
+explMasProb
+logVer
+
+[motor, logVerosim] = enter_evidence(motor, evidencia);
+m = marginal_nodes(motor,C,1);
+m.T
 % 2.3
 semilla = 0; rng(semilla);
 nMuestras = 1000;
