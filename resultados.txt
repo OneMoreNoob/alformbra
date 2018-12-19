@@ -1,0 +1,358 @@
+>> >> [akpun@EVIRL-008-OK alformbra]$ matlab -nodesktop -nosplash -nosoftwareopenj3.m ej
+Opening log file:  /labos/alumnos/akpun/java.log.23747
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> 
+numGaus =
+
+     1
+
+
+numVec =
+
+        3220
+
+
+dim =
+
+    58
+
+
+numClas =
+
+     2
+
+
+numNodos =
+
+     3
+
+EM iteration 1, ll = -610443.7545
+EM iteration 2, ll = -187136.9020
+EM iteration 3, ll = -185876.4748
+EM iteration 4, ll = -185876.4748
+
+
+err =
+
+     0
+
+Error using error
+Too many output arguments.
+ 
+>> >> [akpun@EVIRL-008-OK alformbra]$ matlab -nodesktop -nosplash -nosoftwareopenj3.m ej
+Opening log file:  /labos/alumnos/akpun/java.log.24424
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> 
+numGaus =
+
+     1
+
+
+numVec =
+
+        3220
+
+
+dim =
+
+    58
+
+
+numClas =
+
+     2
+
+
+numNodos =
+
+     3
+
+EM iteration 1, ll = -610443.7545
+EM iteration 2, ll = -187136.9020
+EM iteration 3, ll = -185876.4748
+EM iteration 4, ll = -185876.4748
+
+
+err =
+
+     0
+
+
+err =
+
+     7
+
+
+ans =
+
+        1381
+
+
+confianza =
+
+   0.0000 + 0.3418i
+
+
+numGaus =
+
+     2
+
+
+numVec =
+
+        3220
+
+
+dim =
+
+    58
+
+
+numClas =
+
+     2
+
+
+numNodos =
+
+     3
+
+EM iteration 1, ll = -610192.0750
+EM iteration 2, ll = -181917.9751
+EM iteration 3, ll = -140151.6982
+EM iteration 4, ll = -126484.7806
+EM iteration 5, ll = -124282.6578
+EM iteration 6, ll = -123491.0369
+EM iteration 7, ll = -122733.4264
+EM iteration 8, ll = -122227.3722
+EM iteration 9, ll = -122051.4429
+EM iteration 10, ll = -121257.1096
+EM iteration 11, ll = -120748.7138
+EM iteration 12, ll = -120552.5307
+EM iteration 13, ll = -120532.6466
+
+
+err =
+
+     0
+
+
+err =
+
+    87
+
+
+ans =
+
+        1381
+
+
+confianza =
+
+   0.0000 + 4.5621i
+
+
+numGaus =
+
+     5
+
+
+numVec =
+
+        3220
+
+
+dim =
+
+    58
+
+
+numClas =
+
+     2
+
+
+numNodos =
+
+     3
+
+EM iteration 1, ll = -605906.6584
+EM iteration 2, ll = -179399.2748
+EM iteration 3, ll = -95639.4823
+EM iteration 4, ll = -64036.3141
+EM iteration 5, ll = -56956.1520
+EM iteration 6, ll = -53238.6775
+EM iteration 7, ll = -51156.8705
+EM iteration 8, ll = -49718.2770
+EM iteration 9, ll = -47925.9179
+EM iteration 10, ll = -46830.2395
+EM iteration 11, ll = -45628.3990
+EM iteration 12, ll = -44945.1615
+EM iteration 13, ll = -44764.5606
+EM iteration 14, ll = -44553.2946
+EM iteration 15, ll = -44390.0198
+EM iteration 16, ll = -44240.2255
+
+
+err =
+
+     0
+
+
+err =
+
+   131
+
+
+ans =
+
+        1381
+
+
+confianza =
+
+   0.0000 + 6.8828i
+
+
+numGaus =
+
+    10
+
+
+numVec =
+
+        3220
+
+
+dim =
+
+    58
+
+
+numClas =
+
+     2
+
+
+numNodos =
+
+     3
+
+EM iteration 1, ll = -606030.5676
+EM iteration 2, ll = -177072.0906
+EM iteration 3, ll = -77982.3695
+EM iteration 4, ll = -32397.6033
+EM iteration 5, ll = -21360.0979
+EM iteration 6, ll = -15138.6049
+EM iteration 7, ll = -12307.2955
+EM iteration 8, ll = -10389.0217
+EM iteration 9, ll = -8878.6776
+EM iteration 10, ll = -8006.7782
+EM iteration 11, ll = -7490.7885
+EM iteration 12, ll = -7183.3209
+EM iteration 13, ll = -6702.2338
+EM iteration 14, ll = -6085.6368
+EM iteration 15, ll = -5577.0236
+EM iteration 16, ll = -5327.5062
+
+
+err =
+
+     0
+
+
+err =
+
+   225
+
+
+ans =
+
+        1381
+
+
+confianza =
+
+   0.0000 +11.8406i
+
+
+numGaus =
+
+    20
+
+
+numVec =
+
+        3220
+
+
+dim =
+
+    58
+
+
+numClas =
+
+     2
+
+
+numNodos =
+
+     3
+
+EM iteration 1, ll = -605762.2590
+EM iteration 2, ll = -176334.8349
+EM iteration 3, ll = -64335.9652
+EM iteration 4, ll = -9867.9070
+EM iteration 5, ll = 7011.6114
+EM iteration 6, ll = 12218.8324
+EM iteration 7, ll = 14503.0713
+EM iteration 8, ll = 15946.7000
+EM iteration 9, ll = 16926.1754
+EM iteration 10, ll = 17647.2160
+EM iteration 11, ll = 18623.6958
+EM iteration 12, ll = 19131.4135
+EM iteration 13, ll = 19480.9184
+EM iteration 14, ll = 19742.1965
+EM iteration 15, ll = 20011.0191
+EM iteration 16, ll = 20287.4241
+
+
+err =
+
+     0
+
+
+err =
+
+   260
+
+
+ans =
+
+        1381
+
+
+confianza =
+
+   0.0000 +13.6866i
+
+
