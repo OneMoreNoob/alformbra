@@ -1,3 +1,5 @@
+% matlab -nodesktop -nosplash -nosoftwareopengl < ej3Silvia.m
+
 addpath('~/asigDSIC/ETSINF/apr/p2/BNT')
 addpath(genpathKPM('~/asigDSIC/ETSINF/apr/p2/BNT'))
 
@@ -40,29 +42,30 @@ for numGaus = [1,2,5,10,20,50,100]
 	[redB2, ll, motor2]  = learn_params_em(motor, datosApr, maxIter);
 
 	
-	err = 0
+	err = 0;
 	p = zeros(length(dataTest), numClas); 	%% Limpiamos p por si se ha usado antes
 	evidencia = cell(numNodos,1); 			%% Un cell array vacio para las observaciones
 	for i=1:length(dataTest)
 		evidencia{numNodos} = dataTest(i,:)';
 		[motor3, ll] = enter_evidence(motor2, evidencia);
 		m = marginal_nodes(motor3, 1);
-		p(i,:) = m.T';
-		% if p(i,1) == 1
-		% 	if etiqTest(i,:) == 1
-		% 	else
-		% 	    err= err +1;
-		% 	end
-		% else
-		% 	if etiqTest(i,:) == 2
-		% 	else
-		% 	    err = err +1;
-		% 	end
-		% end
+		p(i,:) = m.T'
+
+		p1 = p(i,1);
+		p2 = p(i,2);
+		claseP = 1;
+		clase = etiqTest(i,:);
+		if p2 > p1:
+			claseP = 2;
+		endif;
+		if claseP !== clase:
+		 	err = err + 1;
+		endif;
 		
-	end
+
+	end;
 	err
-	length(dataTest)
+	% length(dataTest)
 	confianza = 1.96*sqrt(err*(1-err)/length(dataTest))
 end
 
