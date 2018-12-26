@@ -1,0 +1,58 @@
+Opening log file:  /labos/alumnos/silnaal1/java.log.10258
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 1 : 0.4860 
+2 : 0.5140 
+>> 1 : 0.4979 0.5021 
+2 : 0.9066 0.0934 
+>> 1 : 0.8066 0.1934 
+2 : 0.1673 0.8327 
+>> 1 1 : 1.0000 0.0000 
+2 1 : 0.1085 0.8915 
+1 2 : 0.0905 0.9095 
+2 2 : 0.0250 0.9750 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> EM iteration 1, ll = -2090.8004
+EM iteration 2, ll = -1282.4210
+EM iteration 3, ll = -1104.2466
+EM iteration 4, ll = -1005.8459
+EM iteration 5, ll = -949.5902
+EM iteration 6, ll = -917.3463
+EM iteration 7, ll = -898.2160
+EM iteration 8, ll = -886.1995
+EM iteration 9, ll = -878.1985
+EM iteration 10, ll = -872.6191
+EM iteration 11, ll = -868.6048
+EM iteration 12, ll = -865.6603
+EM iteration 13, ll = -863.4763
+EM iteration 14, ll = -861.8461
+EM iteration 15, ll = -860.6246
+EM iteration 16, ll = -859.7074
+EM iteration 17, ll = -859.0175
+EM iteration 18, ll = -858.4980
+EM iteration 19, ll = -858.1063
+EM iteration 20, ll = -857.8107
+EM iteration 21, ll = -857.5873
+EM iteration 22, ll = -857.4183
+EM iteration 23, ll = -857.2902
+EM iteration 24, ll = -857.1930
+EM iteration 25, ll = -857.1191
+
+>> >> >> >> 1 : 0.6969 0.3031 
+2 : 1.0000 0.0000 
+>> 1 1 : 0.9988 0.0012 
+2 1 : 0.2952 0.7048 
+1 2 : 0.1496 0.8504 
+2 2 : 0.0601 0.9399 
+>> 1 : 0.4247 0.5753 
+2 : 0.0000 1.0000 
+>> 1 : 0.9996 
+2 : 0.0004 
+>> 
