@@ -1,4 +1,4 @@
-Opening log file:  /labos/alumnos/silnaal1/java.log.32133
+Opening log file:  /labos/alumnos/silnaal1/java.log.17971
 
                             < M A T L A B (R) >
                   Copyright 1984-2017 The MathWorks, Inc.
@@ -29,7 +29,7 @@ numNodos =
 
      3
 
->> >> >> >> >> >> >> >> 
+>> >> >> >> >> >> >> >> >> >> >> 
 numGaus =
 
      1
@@ -45,9 +45,14 @@ err =
      7
 
 
+porc_error =
+
+    0.0051
+
+
 confianza =
 
-   0.0000 + 0.3418i
+    0.0037
 
 
 numGaus =
@@ -74,9 +79,14 @@ err =
     87
 
 
+porc_error =
+
+    0.0630
+
+
 confianza =
 
-   0.0000 + 4.5621i
+    0.0128
 
 
 numGaus =
@@ -106,9 +116,14 @@ err =
    131
 
 
+porc_error =
+
+    0.0949
+
+
 confianza =
 
-   0.0000 + 6.8828i
+    0.0155
 
 
 numGaus =
@@ -138,9 +153,14 @@ err =
    225
 
 
+porc_error =
+
+    0.1629
+
+
 confianza =
 
-   0.0000 +11.8406i
+    0.0195
 
 
 numGaus =
@@ -170,9 +190,14 @@ err =
    260
 
 
+porc_error =
+
+    0.1883
+
+
 confianza =
 
-   0.0000 +13.6866i
+    0.0206
 
 
 numGaus =
@@ -197,9 +222,14 @@ err =
    301
 
 
+porc_error =
+
+    0.2180
+
+
 confianza =
 
-   0.0000 +15.8490i
+    0.0218
 
 
 numGaus =
@@ -223,8 +253,13 @@ err =
    321
 
 
+porc_error =
+
+    0.2324
+
+
 confianza =
 
-   0.0000 +16.9039i
+    0.0223
 
->> >> >> >> >> 
+>> >> 

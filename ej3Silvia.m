@@ -20,6 +20,9 @@ etqTest  = load('./data/spam/tslabels.dat', '-ascii');
 dataTest = zscore(datTest);
 etiqTest = etqTest + 1;
 
+
+nMuestrasTest = length(dataTest);
+
 for numGaus = [1,2,5,10,20,50,100]
 	numGaus
 	
@@ -43,29 +46,41 @@ for numGaus = [1,2,5,10,20,50,100]
 
 	
 	err = 0;
-	p = zeros(length(dataTest), numClas); 	%% Limpiamos p por si se ha usado antes
+	p = zeros(nMuestrasTest, numClas); 	%% Limpiamos p por si se ha usado antes
 	evidencia = cell(numNodos,1); 			%% Un cell array vacio para las observaciones
-	for i=1:length(dataTest)
+	for i=1:nMuestrasTest
 		evidencia{numNodos} = dataTest(i,:)';
 		[motor3, ll] = enter_evidence(motor2, evidencia);
 		m = marginal_nodes(motor3, 1);
-		p(i,:) = m.T'
+		p(i,:) = m.T';
 
-		p1 = p(i,1);
-		p2 = p(i,2);
-		claseP = 1;
-		clase = etiqTest(i,:);
-		if p2 > p1:
-			claseP = 2;
-		endif;
-		if claseP !== clase:
-		 	err = err + 1;
-		endif;
+		% p1 = p(i,1);
+		% p2 = p(i,2);
+		% claseP = 1;
+		% clase = etiqTest(i,:);
+		% if p2 > p1:
+		% 	claseP = 2;
+		% endif;
+		% if claseP !== clase:
+		%  	err = err + 1;
+		% endif;
 		
+		if p(i,1) == 1
+			if etiqTest(i,:) == 1
+			else
+			    err= err +1;
+			end
+		else
+			if etiqTest(i,:) == 2
+			else
+			    err = err +1;
+			end
+		end
 
 	end;
 	err
-	% length(dataTest)
-	confianza = 1.96*sqrt(err*(1-err)/length(dataTest))
+	% nMuestrasTest
+	porc_error = err/nMuestrasTest
+	confianza = 1.96*sqrt(porc_error*(1-porc_error)/nMuestrasTest) % ¿bien calculado?
 end
 
