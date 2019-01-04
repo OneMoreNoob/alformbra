@@ -1,0 +1,265 @@
+Opening log file:  /labos/alumnos/silnaal1/java.log.30759
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> >> 
+numVec =
+
+        3220
+
+
+dim =
+
+    58
+
+>> 
+numClas =
+
+     2
+
+>> >> >> 
+numNodos =
+
+     3
+
+>> >> >> >> >> >> >> >> >> >> >> 
+numGaus =
+
+     1
+
+EM iteration 1, ll = -610443.7545
+EM iteration 2, ll = -187136.9020
+EM iteration 3, ll = -185876.4748
+EM iteration 4, ll = -185876.4748
+
+
+err =
+
+     7
+
+
+porc_error =
+
+    0.0051
+
+
+confianza =
+
+    0.0037
+
+
+numGaus =
+
+     2
+
+EM iteration 1, ll = -610192.0750
+EM iteration 2, ll = -181917.9751
+EM iteration 3, ll = -140151.6982
+EM iteration 4, ll = -126484.7806
+EM iteration 5, ll = -124282.6578
+EM iteration 6, ll = -123491.0369
+EM iteration 7, ll = -122733.4264
+EM iteration 8, ll = -122227.3722
+EM iteration 9, ll = -122051.4429
+EM iteration 10, ll = -121257.1096
+EM iteration 11, ll = -120748.7138
+EM iteration 12, ll = -120552.5307
+EM iteration 13, ll = -120532.6466
+
+
+err =
+
+     2
+
+
+porc_error =
+
+    0.0014
+
+
+confianza =
+
+    0.0020
+
+
+numGaus =
+
+     5
+
+EM iteration 1, ll = -605906.6584
+EM iteration 2, ll = -179399.2748
+EM iteration 3, ll = -95639.4823
+EM iteration 4, ll = -64036.3141
+EM iteration 5, ll = -56956.1520
+EM iteration 6, ll = -53238.6775
+EM iteration 7, ll = -51156.8705
+EM iteration 8, ll = -49718.2770
+EM iteration 9, ll = -47925.9179
+EM iteration 10, ll = -46830.2395
+EM iteration 11, ll = -45628.3990
+EM iteration 12, ll = -44945.1615
+EM iteration 13, ll = -44764.5606
+EM iteration 14, ll = -44553.2946
+EM iteration 15, ll = -44390.0198
+EM iteration 16, ll = -44240.2255
+
+
+err =
+
+     2
+
+
+porc_error =
+
+    0.0014
+
+
+confianza =
+
+    0.0020
+
+
+numGaus =
+
+    10
+
+EM iteration 1, ll = -606030.5676
+EM iteration 2, ll = -177072.0906
+EM iteration 3, ll = -77982.3695
+EM iteration 4, ll = -32397.6033
+EM iteration 5, ll = -21360.0979
+EM iteration 6, ll = -15138.6049
+EM iteration 7, ll = -12307.2955
+EM iteration 8, ll = -10389.0217
+EM iteration 9, ll = -8878.6776
+EM iteration 10, ll = -8006.7782
+EM iteration 11, ll = -7490.7885
+EM iteration 12, ll = -7183.3209
+EM iteration 13, ll = -6702.2338
+EM iteration 14, ll = -6085.6368
+EM iteration 15, ll = -5577.0236
+EM iteration 16, ll = -5327.5062
+
+
+err =
+
+     0
+
+
+porc_error =
+
+     0
+
+
+confianza =
+
+     0
+
+
+numGaus =
+
+    20
+
+EM iteration 1, ll = -605762.2590
+EM iteration 2, ll = -176334.8349
+EM iteration 3, ll = -64335.9652
+EM iteration 4, ll = -9867.9070
+EM iteration 5, ll = 7011.6114
+EM iteration 6, ll = 12218.8324
+EM iteration 7, ll = 14503.0713
+EM iteration 8, ll = 15946.7000
+EM iteration 9, ll = 16926.1754
+EM iteration 10, ll = 17647.2160
+EM iteration 11, ll = 18623.6958
+EM iteration 12, ll = 19131.4135
+EM iteration 13, ll = 19480.9184
+EM iteration 14, ll = 19742.1965
+EM iteration 15, ll = 20011.0191
+EM iteration 16, ll = 20287.4241
+
+
+err =
+
+     1
+
+
+porc_error =
+
+   7.2411e-04
+
+
+confianza =
+
+    0.0014
+
+
+numGaus =
+
+    50
+
+EM iteration 1, ll = -605739.8866
+EM iteration 2, ll = -175514.1699
+EM iteration 3, ll = -54367.2589
+EM iteration 4, ll = 20994.8428
+EM iteration 5, ll = 40074.9045
+EM iteration 6, ll = 44209.2102
+EM iteration 7, ll = 45743.3900
+EM iteration 8, ll = 46382.6338
+EM iteration 9, ll = 46997.7871
+EM iteration 10, ll = 47223.7551
+EM iteration 11, ll = 47251.0456
+
+
+err =
+
+     2
+
+
+porc_error =
+
+    0.0014
+
+
+confianza =
+
+    0.0020
+
+
+numGaus =
+
+   100
+
+EM iteration 1, ll = -605651.8275
+EM iteration 2, ll = -174421.0519
+EM iteration 3, ll = -46360.6875
+EM iteration 4, ll = 36624.0252
+EM iteration 5, ll = 55496.4996
+EM iteration 6, ll = 58347.4172
+EM iteration 7, ll = 59045.6413
+EM iteration 8, ll = 59347.5387
+EM iteration 9, ll = 59454.6527
+EM iteration 10, ll = 59492.3115
+
+
+err =
+
+     1
+
+
+porc_error =
+
+   7.2411e-04
+
+
+confianza =
+
+    0.0014
+
+>> >> 

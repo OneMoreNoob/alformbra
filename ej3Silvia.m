@@ -54,27 +54,12 @@ for numGaus = [1,2,5,10,20,50,100]
 		m = marginal_nodes(motor3, 1);
 		p(i,:) = m.T';
 
-		% p1 = p(i,1);
-		% p2 = p(i,2);
-		% claseP = 1;
-		% clase = etiqTest(i,:);
-		% if p2 > p1:
-		% 	claseP = 2;
-		% endif;
-		% if claseP !== clase:
-		%  	err = err + 1;
-		% endif;
-		
-		if p(i,1) == 1
-			if etiqTest(i,:) == 1
-			else
-			    err= err +1;
+		if m.T(1) > 0.5
+            if etiqTest(i) == 2
+			    err = err + 1;
 			end
-		else
-			if etiqTest(i,:) == 2
-			else
-			    err = err +1;
-			end
+		elseif etiqTest(i) == 1
+		    err = err + 1;
 		end
 
 	end;

@@ -54,7 +54,7 @@ for numGaus = [1,2,5,10,20,50,100]
 		m = marginal_nodes(motor3, 1);
 		p(i,:) = m.T';
 
-		if p(i,1) == 1
+		if p(i,1) > 0.5
 			if etiqTest(i,:) == 1
 			else
 			    err= err +1;
